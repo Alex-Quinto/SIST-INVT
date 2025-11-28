@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST-INVT.Business", "SIST-INVT\SIST-INVT.Business.csproj", "{150BF973-5099-4AAC-BB59-94735D094A23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST_INVT.Business", "SIST-INVT\SIST_INVT.Business.csproj", "{150BF973-5099-4AAC-BB59-94735D094A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST-INVT.Data", "Data\SIST-INVT.Data.csproj", "{7A13C742-DE3E-4A81-9F4C-B0A20BEE2E2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST_INVT.Data", "Data\SIST_INVT.Data.csproj", "{7A13C742-DE3E-4A81-9F4C-B0A20BEE2E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST-INVT.Entities", "SIST-INVT.Entities\SIST-INVT.Entities.csproj", "{3E66322D-CA29-4E98-ADC7-92447AEA036E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST_INVT.Entities", "SIST-INVT.Entities\SIST_INVT.Entities.csproj", "{3E66322D-CA29-4E98-ADC7-92447AEA036E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST-INVT.Presentation", "SIST-INVT.Presentation\SIST-INVT.Presentation.csproj", "{B15F11CA-1610-4A77-BE6F-B111FB871C58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIST_INVT.Presentation", "SIST-INVT.Presentation\SIST_INVT.Presentation.csproj", "{B15F11CA-1610-4A77-BE6F-B111FB871C58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace SIST_INVT.Entities
 {
-    public class Movimiento
+    public class Baja
     {
-        public int id_movimiento { get; set; }
+        public int id_baja { get; set; }
         public String codigo { get; set; }
         public Activo activo { get; set; }
-        public DateTime fecha_movimiento { get; set; }
-        public String area_origen { get; set; }
-        public String area_destino { get; set; }
-        public String Usuario_origen { get; set; }
-        public String Usuario_destino { get; set; }
+        public DateTime fecha { get; set; }
         public String motivo { get; set; }
+        public String descripcion { get; set; }
+        public float valor_residual { get; set; }
         public DateTime fecha_creacion { get; set; }
     }
 }
