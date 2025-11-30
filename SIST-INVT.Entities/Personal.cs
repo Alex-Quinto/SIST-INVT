@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SIST_INVT.Entities
 {
-    public class Usuario
+    public class Personal
     {
         public int IdUsuario { get; set; }
         public String Codigo { get; set; }
-        public String UsuarioSistema { get; set; }
+        public String Usuario { get; set; }
         public String Clave { get; set; }
         public String Rol { get; set; }
         public String Nombres { get; set; }

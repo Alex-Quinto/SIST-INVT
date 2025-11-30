@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,11 +102,20 @@
     <EmbeddedResource Include="FormActivos.resx">
       <DependentUpon>FormActivos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBajas.resx">
+      <DependentUpon>FormBajas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantenimientos.resx">
+      <DependentUpon>FormMantenimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimientos.resx">
+      <DependentUpon>FormMovimientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuarios.resx">
       <DependentUpon>FormUsuarios.cs</DependentUpon>
@@ -126,6 +138,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIST-INVT.Entities\SIST_INVT.Entities.csproj">
+      <Project>{3e66322d-ca29-4e98-adc7-92447aea036e}</Project>
+      <Name>SIST_INVT.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIST-INVT\SIST_INVT.Business.csproj">
+      <Project>{150bf973-5099-4aac-bb59-94735d094a23}</Project>
+      <Name>SIST_INVT.Business</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

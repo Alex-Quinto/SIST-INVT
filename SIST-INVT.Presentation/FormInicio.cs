@@ -29,21 +29,49 @@ namespace SIST_INVT.Presentation
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            FormUsuarios formUsuarios = new FormUsuarios();
-            formUsuarios.Show();
-            this.Hide();
+            AbrirFormEnPanel(new FormUsuarios());
         }
 
         private void btnActivos_Click(object sender, EventArgs e)
         {
-            FormActivos formActivos = new FormActivos();
-            formActivos.Show();
-            this.Hide();
+            AbrirFormEnPanel(new FormActivos());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnMantenimientos_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormMantenimientos());
+        }
+        private void AbrirFormEnPanel(Form formHijo)
+        {
+            if (pnlContenedor.Controls.Count > 0)
+            {
+                pnlContenedor.Controls.RemoveAt(0);
+            }
+            formHijo.TopLevel = false;
+            formHijo.WindowState = FormWindowState.Maximized;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            pnlContenedor.Controls.Add(formHijo);
+            formHijo.Show();
+        }
+        private void btnBajas_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormBajas());
+        }
+
+        private void btnMovimientos_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormMovimientos());
+        }
+
+        private void btnBajas_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormBajas());
         }
     }
 }

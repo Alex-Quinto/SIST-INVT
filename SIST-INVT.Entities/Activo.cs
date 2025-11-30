@@ -14,7 +14,7 @@ namespace SIST_INVT.Entities
         public String descripcion { get; set; }
         public Categoria categoria { get; set; }
         public Area area { get; set; }
-        public Usuario Usuario { get; set; }
+        public Personal Usuario { get; set; }
         public String marca { get; set; }
         public String modelo { get; set; }
         public String numero_serie { get; set; }

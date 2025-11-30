@@ -8,9 +8,9 @@ namespace SIST_INVT.Data.Repositories
 {
     public class LoginDAO
     {
-        public Usuario Login(string Usuario, string clave)
+        public Personal Login(string usuario, string clave)
         {
-        Usuario usuario = null;
+        Personal personal = null;
             using (SqlConnection cn = ConnectionDB.GetConnection())
             {
                 string sql = @"
@@ -28,7 +28,7 @@ namespace SIST_INVT.Data.Repositories
 
                 if (dr.Read())
                 {
-                    usuario = new Usuario
+                    personal = new Personal
                     {
                         IdUsuario = Convert.ToInt32(dr["id_usuario"]),
                         Nombres = dr["nombres"].ToString(),
@@ -38,7 +38,7 @@ namespace SIST_INVT.Data.Repositories
                 }
 
             }
-            return usuario;
+            return personal;
         }
     }
 }
